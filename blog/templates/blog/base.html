@@ -1,0 +1,28 @@
+{% load staticfiles %} 
+<html>
+        <head>
+            <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+            <title> Pyssan's Blog </title>
+        </head>
+        <body>
+            <div class="page-header">
+                <h1><a href="/">Pyssan'ss Blog</a></h1>
+            </div>
+
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+        
+</body>
+
+<a href="https://djangogirls.org">Blog Reference</a></br>
+<a href="https:/www.google.com">Let's go to Google</a>
+</html>
